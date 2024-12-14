@@ -22,6 +22,9 @@ import { checkUserAuth } from "./store/auth-slice";
 import { Skeleton } from "@/components/ui/skeleton";
 import SearchProducts from "./pages/shop/search";
 import AdminFeatures from "./pages/admin/features";
+import LandingPage from "./pages/views/LandingPage";
+import { PAYMENT } from "./pages/payment/payment_portal";
+
 // import { SkeletonDemo } from "./components/common/skeleton";
 
 const App = () => {
@@ -46,6 +49,7 @@ const App = () => {
   return (
     <div className="flex flex-col overflow-hidden bg-gray-300 font-body">
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route
           path="/auth"
           element={
@@ -86,6 +90,7 @@ const App = () => {
           <Route path="checkout" element={<ShoppingCheckout />} />
           <Route path="account" element={<ShoppingAccount />} />
           <Route path="search" element={<SearchProducts />} />
+          <Route path="payment" element={<PAYMENT />} />
         </Route>
 
         <Route path="*" element={<PagesNotFound />} />

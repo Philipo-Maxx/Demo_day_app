@@ -12,7 +12,7 @@ const AuthLayout = () => {
         />
         <h1 class="absolute text-4xl font-bold text-slate-50">
           <span class="text-[#080B28] font-body text-7xl absolute top-10 left-32">
-            Der MarktPlaz
+            Spark Haven
           </span>
         </h1>
       </div>

@@ -78,11 +78,13 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
+      { id: "watches", label: "Watches" },
+      { id: "bracelets", label: "Bracelets" },
+      { id: "anklet", label: "Anklets" },
+      { id: "necklace", label: "Necklace" },
       { id: "footwear", label: "Footwear" },
+      { id: "earring", label: "Earrings" },
+      { id: "waistchain", label: "Waistchain" },
     ],
   },
   {
@@ -90,12 +92,12 @@ export const addProductFormElements = [
     name: "brand",
     componentType: "select",
     options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
-      { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "t_co", label: "Tiffany & Co." },
+      { id: "h_w", label: "Harry Winston" },
+      { id: "cartier", label: "Cartier" },
+      { id: "v_c_a", label: "Van Cleef & Arpels" },
+      { id: "graff", label: "Graff" },
+      { id: "bvlgari", label: "Bvlgari" },
     ],
   },
   {
@@ -133,18 +135,18 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "men",
-    label: "Men",
+    id: "watches",
+    label: "Watches",
     path: "/shop/listing",
   },
   {
-    id: "women",
-    label: "Women",
+    id: "bracelets",
+    label: "Bracelets",
     path: "/shop/listing",
   },
   {
-    id: "kids",
-    label: "Kids",
+    id: "anklet",
+    label: "Anklets",
     path: "/shop/listing",
   },
   {
@@ -153,8 +155,23 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "accessories",
-    label: "Accessories",
+    id: "necklace",
+    label: "Necklace",
+    path: "/shop/listing",
+  },
+  // {
+  //   id: "accessories",
+  //   label: "Accessories",
+  //   path: "/shop/listing",
+  // },
+  {
+    id: "earring",
+    label: "Earrings",
+    path: "/shop/listing",
+  },
+  {
+    id: "waistchain",
+    label: "Waistchain",
     path: "/shop/listing",
   },
   {
@@ -166,19 +183,22 @@ export const shoppingViewHeaderMenuItems = [
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
+    { id: "watches", label: "Watches" },
+    { id: "bracelets", label: "Bracelets" },
+    { id: "anklet", label: "Anklets" },
+    { id: "necklace", label: "Necklace" },
     { id: "footwear", label: "Footwear" },
+    { id: "earring", label: "Earrings" },
+    { id: "waistchain", label: "Waistchain" },
+    {id:"handrings", label:"HandRings"}
   ],
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
-    { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "t_co", label: "Tiffany & Co." },
+    { id: "h_w", label: "Harry Winston" },
+    { id: "cartier", label: "Cartier" },
+    { id: "v_c_a", label: "Van Cleef & Arpels" },
+    { id: "graff", label: "Graff" },
+    { id: "bvlgari", label: "Bvlgari" },
   ],
 };
 
@@ -190,20 +210,23 @@ export const sortOptions = [
 ];
 
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
+  watches: "Watches",
+  bracelets: "Bracelets",
+  anklet: "Anklets",
+  accessories: "Necklace",
   footwear: "Footwear",
+  earring: "Earrings",
+  waistchain: "Waistchain",
+  rings:"HandRings"
 };
 
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
-  zara: "Zara",
-  "h&m": "H&M",
+  t_co: "Taffany & Co.",
+  h_w: "Harry Winston",
+  cartier: "Cartier",
+  v_c_a: "Van Cleef & Arpels",
+  graff: "Graff",
+  bvlgari: "Bvlgari",
 };
 
 

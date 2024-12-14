@@ -224,6 +224,7 @@ export const SignUpForm = ({ formData }) => {
                 className="border w-full rounded p-2"
               >
                 <option value="user">User</option>
+                <option value="user">User</option>
                 <option value="admin">Admin</option>
               </Field>
             </div>

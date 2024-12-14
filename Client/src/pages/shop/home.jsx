@@ -17,13 +17,16 @@ import {
   Images,
   Shirt,
   ShirtIcon,
+  Watch,
+  Ear,
   ShoppingBasket,
-  UmbrellaIcon,
-  WashingMachine,
-  WatchIcon,
+  Gem,
+  User,
 } from "lucide-react";
 
+import { FaUsers } from "react-icons/fa";
 import { fetchProductDetails } from "@/store/shop/product-slice";
+import { GiChainedHeart, GiGemChain, GiChaingun } from "react-icons/gi";
 
 import { fetchAllFilteredProducts } from "@/store/shop/product-slice";
 
@@ -42,20 +45,22 @@ import ProductDetailsDialog from "@/components/shop/product-details";
 import { getFeatureImages } from "@/store/common";
 
 const categoriesWithIcon = [
-  { id: "men", label: "Men", icon: ShirtIcon },
-  { id: "women", label: "Women", icon: CloudLightning },
-  { id: "kids", label: "Kids", icon: BabyIcon },
-  { id: "accessories", label: "Accessories", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: UmbrellaIcon },
+  { id: "watches", label: "Watches", icon: Watch },
+  { id: "bracelets", label: "Bracelets", icon: GiChaingun },
+  { id: "anklet", label: "Anklets", icon: GiChainedHeart },
+  { id: "necklace", label: "Necklace", icon: GiGemChain },
+  { id: "ring", label: "Rings", icon: Gem },
+  { id: "earring", label: "Earrings", icon: Ear },
+  { id: "waistchain", label: "Waistchain", icon: ShoppingBasket },
 ];
 
 const brandsWithIcon = [
-  { id: "nike", label: "Nike", icon: Shirt },
-  { id: "adidas", label: "Adidas", icon: WashingMachine },
-  { id: "puma", label: "Puma", icon: ShoppingBasket },
-  { id: "levi", label: "Levi's", icon: Airplay },
-  { id: "zara", label: "Zara", icon: Images },
-  { id: "h&m", label: "H&M", icon: Heater },
+  { id: "t_co", label: "Tiffany & Co.", icon: FaUsers },
+  { id: "h_w", label: "Harry Winston", icon: User },
+  { id: "cartier", label: "Cartier", icon: FaUsers },
+  { id: "v_c_a", label: "Van Cleef & Arpels", icon: FaUsers },
+  { id: "graff", label: "Graff", icon: User },
+  { id: "bvlgari", label: "Bvlgari", icon: User },
 ];
 
 function ShoppingHome() {
@@ -176,7 +181,7 @@ function ShoppingHome() {
         </Button>
       </div>
 
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
             Shop by category
@@ -199,7 +204,7 @@ function ShoppingHome() {
         </div>
       </section>
 
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Shop by Brand</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -218,7 +223,7 @@ function ShoppingHome() {
         </div>
       </section>
 
-      <section className="py-12">
+      <section className="py-12 bg-sky-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
             Feature Products
